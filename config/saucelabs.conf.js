@@ -1,4 +1,4 @@
-const{ generalConf } = require("./general.conf")
+import { generalConf } from "./general.conf.js"    
 let saucelabsConf {
   user: process.env.SAUCE_USERNAME,
   key: process.env.SAUCE_ACCESS_KEY,
@@ -20,6 +20,8 @@ capabilities: [{
     deviceOrientation: 'portrait',
   }
 }],
+...generalConf,
+
 }
 
 module.exports = { saucelabsConf }
