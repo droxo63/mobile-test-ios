@@ -31,9 +31,9 @@ jobs:
           # Exemplo com Allure:
           npm run report:generate
 
- name: 📤 Publish Report
+   - name: 📤 Publish Report
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
-          name: ${{secrets.GITHUB_TOKEN}}
-          path: ./alure-report 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report  # ou o caminho correto do seu relatório

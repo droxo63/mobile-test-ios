@@ -292,7 +292,8 @@
   },
   "scripts": {
     "test": "wdio run ../config/wdio.conf.js",
-    "posttest": "allure generate allure results"
+    "posttest": "allure generate allure results",
+    
     
   },
   "keywords": [],
