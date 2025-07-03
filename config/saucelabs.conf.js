@@ -1,6 +1,6 @@
+
 import { generalConf } from "./general.conf.js"  
-  
-let saucelabsConf {
+export let saucelabsConf {
   user: process.env.SAUCE_USERNAME,
   key: process.env.SAUCE_ACCESS_KEY,
   hostname: 'ondemand.us-west-1.saucelabs.com',
@@ -20,9 +20,9 @@ capabilities: [{
     appiumVersion: '2.11.0',    
     deviceOrientation: 'portrait',
   }
+...generalConf 
 }],
 
 
-}...generalConf
+} 
 
-module.exports = { saucelabsConf }

@@ -1,4 +1,4 @@
-let reportersConf = process.env.REPORTER == 'true'? {
+export let reportersConf = process.env.REPORTER == 'true'? {
 
     reporters: [
         'spec',
@@ -11,4 +11,3 @@ let reportersConf = process.env.REPORTER == 'true'? {
 
 }: {}
 
-module.exports = { reportersConf }

@@ -1,4 +1,4 @@
-let hooksConf = {
+export let hooksConf = {
  afterTest: async function (test, context, { error, result, duration, passed }) {
         if (!passed) {
             await browser.takeScreenshot();
@@ -6,4 +6,3 @@ let hooksConf = {
     }
 }
 
-module.exports = { hooksConf }

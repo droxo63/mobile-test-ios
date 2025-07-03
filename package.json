@@ -291,10 +291,8 @@
     "zip-stream": "^6.0.1"
   },
   "scripts": {
-    "test": "wdio run ../config/wdio.conf.js",
-    "posttest": "allure generate allure results",
-    
-    
+    "test": "wdio run ./config/wdio.conf.js",
+    "posttest": "allure generate allure results"
   },
   "keywords": [],
   "author": "",

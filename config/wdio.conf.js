@@ -1,5 +1,6 @@
 import { localConf } from "./local.conf.js";
 import { saucelabsConf } from "./saucelabs.conf.js";
+import { bsConf } from "./bs.conf.js";
 
 //const { localConf } = require("./local.conf");
 //const { saucelabsConf } = require("./sauce.conf");
@@ -13,6 +14,9 @@ function getConfig() {
 
         case "saucelabs":
             return saucelabsConf;
+
+             case "browserstack":
+            return bsConf;
     }
 }
-exports.config = getConfig();
+export const config = getConfig();

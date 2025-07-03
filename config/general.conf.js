@@ -1,11 +1,11 @@
 import { specsConf } from './specs.conf.js';
 //const {specsConf} = require('./specs.conf.js');
-import {  reportersConf } from './reports.conf.js';
+import { reportersConf } from './reports.conf.js';
 //const {reportersConf} = require('.reports.conf.js');
 import { hooksConf } from './hooks.conf.js';
 //const {hooksConf} = require('./hooks.conf.js');
 
-let generalConf = {
+export let generalConf = {
      maxInstances: 1,
       logLevel: 'info',
     waitforTimeout: 10000,
@@ -21,4 +21,3 @@ let generalConf = {
     ...hooksConf
 }
 
-module.exports = {generalConf}

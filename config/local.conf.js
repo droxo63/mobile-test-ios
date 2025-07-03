@@ -1,6 +1,6 @@
 //const { generalConf } = require("./general.conf")
 import { generalConf } from "./general.conf.js"  
-let localConf = {
+export let localConf = {
     runner: 'local',
     port: 4723,
 
@@ -16,4 +16,3 @@ capabilities: [{
 }],
 ...generalConf
 }
-module.exports = { localConf }
