@@ -5,7 +5,7 @@ export let reportersConf = process.env.REPORTER == 'true'? {
         ['allure', {
             outputDir: 'allure-results',
             disableWebdriverStepsReporting: true,
-            disableWebdriverScreenshotsReporting: false,
+            disableWebdriverScreenshotsReporting: false
         }]
     ],
 

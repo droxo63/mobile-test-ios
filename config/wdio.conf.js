@@ -17,6 +17,8 @@ function getConfig() {
 
              case "browserstack":
             return bsConf;
+            
     }
 }
 export const config = getConfig();
+//export default getConfig();

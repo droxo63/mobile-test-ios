@@ -8,6 +8,10 @@ class PaymentPage {
     async checkout() {
         await this.checkoutButton.click();
     }
+
+    async isCheckoutButtonVisible() {
+        return await this.checkoutButton.isDisplayed();
+    }
 }
 
 export default new PaymentPage();
